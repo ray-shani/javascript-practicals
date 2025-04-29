@@ -29,5 +29,7 @@ let thinkingLength=thinking.length;
 alert("You have written" + thinkingLength + "and have"+ (280-thinkingLength)+"words left");
 
 // Slice and removing parts of a string
+let day="Monday";
+console.log(day);
 
 
