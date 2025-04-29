@@ -22,3 +22,12 @@ let excellence="To seek excellence you must first taste the bitter tatse of fail
 let growth="Cumulative growth as person is the same as deep as his conviction of not failing";
 console.log(excellence.length);
 console.log("What is life with excellence,"+ "" + excellence + "" +growth);
+
+// Creating  a prompt to count the characters of a string
+let thinking=prompt("Personal thoughts");
+let thinkingLength=thinking.length;
+alert("You have written" + thinkingLength + "and have"+ (280-thinkingLength)+"words left");
+
+// Slice and removing parts of a string
+
+
