@@ -62,13 +62,22 @@ console.log(jinja);
 // Make sure your console.log output matches the example output precisely. The same capitalisation, the same spaces, commas and full stops.
 
 // Failed to give the required output
-function lifeinWeeks(age){
-  let xAge=(90*365)-(age*365);
-  let yAge=(90*52)-(age*52);
-  let zAge=(90*12)-(age*12);
-  return xAge,yAge,zAge;
+// function lifeinWeeks(age){
+//   let xAge=(90*365)-(age*365);
+//   let yAge=(90*52)-(age*52);
+//   let zAge=(90*12)-(age*12);
+//   return xAge,yAge,zAge;
   
+// }
+// let myAge=lifeinWeeks(56);
+// console.log("These are " + xAge );
+  
+// Correct code 
+function lifeInWeeks1(age){
+  let remainingAge=90-age;
+  let x=remainingAge*365;
+  let y=remainingAge*52;
+  let z=remainingAge*12;
+  console.log("You have " + x+"days left " +y+" weeks" +z+ " months left");
 }
-let myAge=lifeinWeeks(56);
-console.log("These are " + xAge );
-  
+lifeInWeeks1(56);
