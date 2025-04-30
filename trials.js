@@ -34,15 +34,15 @@ let jinja=day.slice(0,1);
 console.log(jinja);
 
 // How to transform a separate letter  from a string to a capital letter and still retaining the rest
-// let yourName=prompt("What is your name?");
-// let newLetter=yourName.slice(0,1).toUpperCase();
-// let originalName=newLetter+yourName.slice(1).toLowerCase();
-// alert("Your name is "+originalName);
+let yourName=prompt("What is your name?");
+let newLetter=yourName.slice(0,1).toUpperCase();
+let originalName=newLetter+yourName.slice(1).toLowerCase();
+alert("Your name is "+originalName);
 
-// let whatDay=prompt("What day is this");
-// let today=whatDay.slice(0,1).toUpperCase();
-// let originalDay=today+whatDay.slice(1).toLowerCase();
-// alert("Today is " + originalDay);
+let whatDay=prompt("What day is this");
+let today=whatDay.slice(0,1).toUpperCase();
+let originalDay=today+whatDay.slice(1).toLowerCase();
+alert("Today is " + originalDay);
 
 //Calculating the number of days months and year a person has before they reach the complete age of retirement
 // Life in Weeks Coding Exercise
@@ -61,16 +61,16 @@ console.log(jinja);
 // Try using this Repl.it playground to test your code and see if the output is what you expect it to be.
 // Make sure your console.log output matches the example output precisely. The same capitalisation, the same spaces, commas and full stops.
 
-// Failed to give the required output
-// function lifeinWeeks(age){
-//   let xAge=(90*365)-(age*365);
-//   let yAge=(90*52)-(age*52);
-//   let zAge=(90*12)-(age*12);
-//   return xAge,yAge,zAge;
+Failed to give the required output
+function lifeinWeeks(age){
+  let xAge=(90*365)-(age*365);
+  let yAge=(90*52)-(age*52);
+  let zAge=(90*12)-(age*12);
+  return xAge,yAge,zAge;
   
-// }
-// let myAge=lifeinWeeks(56);
-// console.log("These are " + xAge );
+}
+let myAge=lifeinWeeks(56);
+console.log("These are " + xAge );
   
 // Correct code 
 function lifeInWeeks1(age){
@@ -81,3 +81,47 @@ function lifeInWeeks1(age){
   console.log("You have " + x+"days left " +y+" weeks" +z+ " months left");
 }
 lifeInWeeks1(56);
+
+
+///*  Excercism practicals
+// 1. Define the expected oven time in minutes
+// Define the EXPECTED_MINUTES_IN_OVEN constant that represents how many minutes the lasagna should be in the oven.
+//  It must be */ exported. According to the cooking book, the expected oven time in minutes is 40.
+const EXPECTED_MINUTES_IN_OVEiN=40;
+
+
+//* / 2. Calculate the remaining oven time in minutes
+// Implement the remainingMinutesInOven function that takes the actual minutes the lasagna has been in the oven as a 
+// parameter and returns how many minutes the lasagna still has to remain in the oven, based on the expected oven time in minutes from the */ previous task.
+function remainingMinutesInOven(min){
+  let remainingMinutes=40-min;
+  console.log(remainingMinutes);
+}
+remainingMinutesInOven(33);
+
+
+// 3. Calculate the preparation time in minutes
+// Implement the preparationTimeInMinutes function that takes the number of layers you added to the lasagna as a parameter
+//  and returns how many minutes you spent preparing the lasagna, assuming each layer takes you 2 minutes to prepare.
+
+function preparationTimeInMinutes(layers){
+  let numberOfLayers=layers*2;
+  console.log(numberOfLayers);
+}
+preparationTimeInMinutes(10);
+
+//4. Calculate the total working time in minutes
+/* Implement the totalTimeInMinutes function that takes two parameters: the numberOfLayers parameter 
+is the number of layers you added to the lasagna, and the actualMinutesInOven parameter is the number of 
+minutes the lasagna has been in the oven. The function should return how many minutes in total you've worked on cooking 
+the lasagna, which is the sum of the preparation time in minutes, and the time in minutes the lasagna has spent in 
+the oven at the moment. */
+
+function totalTimeInMinutes(layers,minutes){
+  let numberOfLayers=layers*2;
+  let actualMinutesInOven=minutes;
+  console.log(numberOfLayers+actualMinutesInOven);
+}
+totalTimeInMinutes(10,40);
+
+
