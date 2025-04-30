@@ -30,6 +30,16 @@ alert("You have written" + thinkingLength + "and have"+ (280-thinkingLength)+"wo
 
 // Slice and removing parts of a string
 let day="Monday";
-console.log(day);
+let jinja=day.slice(0,1);
+console.log(jinja);
 
+// How to transform a separate letter  from a string to a capital letter and still retaining the rest
+let yourName=prompt("What is your name?");
+let newLetter=yourName.slice(0,1).toUpperCase();
+let originalName=newLetter+yourName.slice(1).toLowerCase();
+alert("Your name is "+originalName);
 
+let whatDay=prompt("What day is this");
+let today=whatDay.slice(0,1).toUpperCase();
+let originalDay=today+whatDay.slice(1).toLowerCase();
+alert("Today is " + originalDay);
