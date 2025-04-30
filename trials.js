@@ -61,33 +61,33 @@ alert("Today is " + originalDay);
 // Try using this Repl.it playground to test your code and see if the output is what you expect it to be.
 // Make sure your console.log output matches the example output precisely. The same capitalisation, the same spaces, commas and full stops.
 
-Failed to give the required output
-function lifeinWeeks(age){
-  let xAge=(90*365)-(age*365);
-  let yAge=(90*52)-(age*52);
-  let zAge=(90*12)-(age*12);
-  return xAge,yAge,zAge;
+// Failed to give the required output
+// function lifeinWeeks(age){
+//   let xAge=(90*365)-(age*365);
+//   let yAge=(90*52)-(age*52);
+//   let zAge=(90*12)-(age*12);
+//   return xAge,yAge,zAge;
   
-}
-let myAge=lifeinWeeks(56);
-console.log("These are " + xAge );
+// }
+// let myAge=lifeinWeeks(56);
+// console.log("These are " + xAge );
   
-// Correct code 
-function lifeInWeeks1(age){
-  let remainingAge=90-age;
-  let x=remainingAge*365;
-  let y=remainingAge*52;
-  let z=remainingAge*12;
-  console.log("You have " + x+"days left " +y+" weeks" +z+ " months left");
-}
-lifeInWeeks1(56);
+// // Correct code 
+// function lifeInWeeks1(age){
+//   let remainingAge=90-age;
+//   let x=remainingAge*365;
+//   let y=remainingAge*52;
+//   let z=remainingAge*12;
+//   console.log("You have " + x+"days left " +y+" weeks" +z+ " months left");
+// }
+// lifeInWeeks1(56);
 
 
-///*  Excercism practicals
+// ///*  Excercism practicals
 // 1. Define the expected oven time in minutes
 // Define the EXPECTED_MINUTES_IN_OVEN constant that represents how many minutes the lasagna should be in the oven.
 //  It must be */ exported. According to the cooking book, the expected oven time in minutes is 40.
-const EXPECTED_MINUTES_IN_OVEiN=40;
+const EXPECTED_MINUTES_IN_OVEN=40;
 
 
 //* / 2. Calculate the remaining oven time in minutes
@@ -95,9 +95,10 @@ const EXPECTED_MINUTES_IN_OVEiN=40;
 // parameter and returns how many minutes the lasagna still has to remain in the oven, based on the expected oven time in minutes from the */ previous task.
 function remainingMinutesInOven(min){
   let remainingMinutes=40-min;
-  console.log(remainingMinutes);
+  return remainingMinutes;
 }
-remainingMinutesInOven(33);
+const answer1=remainingMinutesInOven(33);
+console.log(answer1);
 
 
 // 3. Calculate the preparation time in minutes
@@ -106,9 +107,10 @@ remainingMinutesInOven(33);
 
 function preparationTimeInMinutes(layers){
   let numberOfLayers=layers*2;
-  console.log(numberOfLayers);
+ return numberOfLayers;
 }
-preparationTimeInMinutes(10);
+const answer2=preparationTimeInMinutes(10);
+console.log(answer2);
 
 //4. Calculate the total working time in minutes
 /* Implement the totalTimeInMinutes function that takes two parameters: the numberOfLayers parameter 
@@ -120,8 +122,9 @@ the oven at the moment. */
 function totalTimeInMinutes(layers,minutes){
   let numberOfLayers=layers*2;
   let actualMinutesInOven=minutes;
-  console.log(numberOfLayers+actualMinutesInOven);
+ return numberOfLayers+actualMinutesInOven;
 }
-totalTimeInMinutes(10,40);
+const answer3=totalTimeInMinutes(10,40);
+console.log(answer3);
 
 
