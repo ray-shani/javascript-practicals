@@ -28,6 +28,11 @@ let thinking=prompt("Personal thoughts");
 let thinkingLength=thinking.length;
 alert("You have written" + thinkingLength + "and have"+ (280-thinkingLength)+"words left");
 
+// This one results in an empty word count so you must attatch a variable to the prompt to be able to know how many characters have been input in field
+prompt("This is a twitter account");
+let words="";
+let characterWords=words.length;
+alert("You have written " + characterWords + "and are remaining with " + (280-characterWords));
 // Slice and removing parts of a string
 
 
