@@ -149,19 +149,41 @@ the oven at the moment. */
 // n=Math.floor(n)+1;
 // console.log(n);
 
-// Calculating if a year is a leap year Output came as undefined
+// // Calculating if a year is a leap year Output came as undefined
+// function isLeapYear(year){
+//   if(year%4){
+//     return 'Leap year';
+//   }
+//   if (year%100){
+//     return 'Not leap year';
+//   }
+//   if(year%400){
+//     return 'Leap year';
+//   }
+// }
+// let currentYear=isLeapYear(2000);
+// console.log(currentYear);
+
+// Correct code on the leap year challenge
 function isLeapYear(year){
-  if(year%4){
-    return 'Leap year';
+  if(year%4===0){
+    if(year%100===0){
+      if(year%400===0){
+        return 'Leap year';
+      }
+    }
+    else{
+      return 'Not leap year';
+    }
   }
-  if (year%100){
-    return 'Not leap year';
-  }
-  if(year%400){
+  else{
     return 'Leap year';
   }
 }
-let currentYear=isLeapYear(2000);
-console.log(currentYear);
+let currentYear1=isLeapYear(2000);
+console.log(currentYear1);
+
+// Looking into arrays
+
 
 
