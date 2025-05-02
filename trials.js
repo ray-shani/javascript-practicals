@@ -133,11 +133,11 @@ function bodyMassIndex(weight,height){
   var bmi= bmiCalculator(65,1.8);
   return bmi;
 }
-// // Generating a dice roll
-// let n=Math.random();
-// n=n*6;
-// n=Math.floor(n)+1;
-// console.log(n);
+// Generating a dice roll
+let n=Math.random();
+n=n*6;
+n=Math.floor(n)+1;
+console.log(n);
 
 // //
 
