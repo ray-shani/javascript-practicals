@@ -1,27 +1,27 @@
 
 // Restarting of javascript practicals
 // Concatenation
-let myName="Ray";
-let herName="Sashi";
-console.log(myName+ "" + "and" +""+ herName + "are brother and sister");
-myName.length
+// let myName="Ray";
+// let herName="Sashi";
+// console.log(myName+ "" + "and" +""+ herName + "are brother and sister");
+// myName.length
 
-let car="This is a subaru";
-let owner="John Njoroge";
-console.log(car + "and it is owned by a friend of mine" + owner);
+// let car="This is a subaru";
+// let owner="John Njoroge";
+// console.log(car + "and it is owned by a friend of mine" + owner);
 
-let daily3="Movement,meditation,morning pages";
-let movement="When i wake up everyday i will ensure I practise :";
-console.log(movement + daily3);
+// let daily3="Movement,meditation,morning pages";
+// let movement="When i wake up everyday i will ensure I practise :";
+// console.log(movement + daily3);
 
-let lawsOfNature="The laws of the jungle are very intense for a young man";
-let lawsOfEmployment="A major one in the business world is hire slowly and fire quickly";
-console.log("General thoughts dictate that" + "" + lawsOfNature + "" + lawsOfEmployment);
+// let lawsOfNature="The laws of the jungle are very intense for a young man";
+// let lawsOfEmployment="A major one in the business world is hire slowly and fire quickly";
+// console.log("General thoughts dictate that" + "" + lawsOfNature + "" + lawsOfEmployment);
 
-let excellence="To seek excellence you must first taste the bitter tatse of failure";
-let growth="Cumulative growth as person is the same as deep as his conviction of not failing";
-console.log(excellence.length);
-console.log("What is life with excellence,"+ "" + excellence + "" +growth);
+// let excellence="To seek excellence you must first taste the bitter tatse of failure";
+// let growth="Cumulative growth as person is the same as deep as his conviction of not failing";
+// console.log(excellence.length);
+// console.log("What is life with excellence,"+ "" + excellence + "" +growth);
 
 // Creating  a prompt to count the characters of a string
 // let thinking=prompt("Personal thoughts");
@@ -29,20 +29,20 @@ console.log("What is life with excellence,"+ "" + excellence + "" +growth);
 // alert("You have written" + thinkingLength + "and have"+ (280-thinkingLength)+"words left");
 
 // Slice and removing parts of a string
-let day="Monday";
-let jinja=day.slice(0,1);
-console.log(jinja);
+// let day="Monday";
+// let jinja=day.slice(0,1);
+// console.log(jinja);
 
 // How to transform a separate letter  from a string to a capital letter and still retaining the rest
-let yourName=prompt("What is your name?");
-let newLetter=yourName.slice(0,1).toUpperCase();
-let originalName=newLetter+yourName.slice(1).toLowerCase();
-alert("Your name is "+originalName);
+// let yourName=prompt("What is your name?");
+// let newLetter=yourName.slice(0,1).toUpperCase();
+// let originalName=newLetter+yourName.slice(1).toLowerCase();
+// alert("Your name is "+originalName);
 
-let whatDay=prompt("What day is this");
-let today=whatDay.slice(0,1).toUpperCase();
-let originalDay=today+whatDay.slice(1).toLowerCase();
-alert("Today is " + originalDay);
+// let whatDay=prompt("What day is this");
+// let today=whatDay.slice(0,1).toUpperCase();
+// let originalDay=today+whatDay.slice(1).toLowerCase();
+// alert("Today is " + originalDay);
 
 //Calculating the number of days months and year a person has before they reach the complete age of retirement
 // Life in Weeks Coding Exercise
@@ -73,44 +73,44 @@ alert("Today is " + originalDay);
 // console.log("These are " + xAge );
   
 // Correct code 
-function lifeInWeeks1(age){
-  let remainingAge=90-age;
-  let x=remainingAge*365;
-  let y=remainingAge*52;
-  let z=remainingAge*12;
-  console.log("You have " + x+"days left " +y+" weeks" +z+ " months left");
-}
-lifeInWeeks1(56);
+// function lifeInWeeks1(age){
+//   let remainingAge=90-age;
+//   let x=remainingAge*365;
+//   let y=remainingAge*52;
+//   let z=remainingAge*12;
+//   console.log("You have " + x+"days left " +y+" weeks" +z+ " months left");
+// }
+// lifeInWeeks1(56);
 
 
 // ///*  Excercism practicals
 // 1. Define the expected oven time in minutes
 // Define the EXPECTED_MINUTES_IN_OVEN constant that represents how many minutes the lasagna should be in the oven.
 //  It must be */ exported. According to the cooking book, the expected oven time in minutes is 40.
-const EXPECTED_MINUTES_IN_OVEN=40;
+// const EXPECTED_MINUTES_IN_OVEN=40;
 
 
 //* / 2. Calculate the remaining oven time in minutes
 // Implement the remainingMinutesInOven function that takes the actual minutes the lasagna has been in the oven as a 
 // parameter and returns how many minutes the lasagna still has to remain in the oven, based on the expected oven time in minutes from the */ previous task.
-function remainingMinutesInOven(min){
-  let remainingMinutes=40-min;
-  return remainingMinutes;
-}
-const answer1=remainingMinutesInOven(33);
-console.log(answer1);
+// function remainingMinutesInOven(min){
+//   let remainingMinutes=40-min;
+//   return remainingMinutes;
+// }
+// const answer1=remainingMinutesInOven(33);
+// console.log(answer1);
 
 
 // 3. Calculate the preparation time in minutes
 // Implement the preparationTimeInMinutes function that takes the number of layers you added to the lasagna as a parameter
 //  and returns how many minutes you spent preparing the lasagna, assuming each layer takes you 2 minutes to prepare.
 
-function preparationTimeInMinutes(layers){
-  let numberOfLayers=layers*2;
- return numberOfLayers;
-}
-const answer2=preparationTimeInMinutes(10);
-console.log(answer2);
+// function preparationTimeInMinutes(layers){
+//   let numberOfLayers=layers*2;
+//  return numberOfLayers;
+// }
+// const answer2=preparationTimeInMinutes(10);
+// console.log(answer2);
 
 //4. Calculate the total working time in minutes
 /* Implement the totalTimeInMinutes function that takes two parameters: the numberOfLayers parameter 
@@ -119,26 +119,49 @@ minutes the lasagna has been in the oven. The function should return how many mi
 the lasagna, which is the sum of the preparation time in minutes, and the time in minutes the lasagna has spent in 
 the oven at the moment. */
 
-function totalTimeInMinutes(layers,minutes){
-  let numberOfLayers=layers*2;
-  let actualMinutesInOven=minutes;
- return numberOfLayers+actualMinutesInOven;
-}
-const answer3=totalTimeInMinutes(10,40);
-console.log(answer3);
+// function totalTimeInMinutes(layers,minutes){
+//   let numberOfLayers=layers*2;
+//   let actualMinutesInOven=minutes;
+//  return numberOfLayers+actualMinutesInOven;
+// }
+// const answer3=totalTimeInMinutes(10,40);
+// console.log(answer3);
 
 //BMI Calculator using the return function
-function bodyMassIndex(weight,height){
-  var bmiCalculator=weight/(height*height);
-  var bmi= bmiCalculator(65,1.8);
-  return bmi;
-}
-// Generating a dice roll
-let n=Math.random();
-n=n*6;
-n=Math.floor(n)+1;
-console.log(n);
+// function bmiCalculator(weight,height){
+//   var bmi=weight/(height*height);
+//   if(bmi<18.5){
+//     return 'Your BMI is '+ bmi +', so you are underweight';
+//   }
+//   if (bmi>=18.5||bmi<=24.5){
+//     return 'Your BMI is '+ bmi +', so you have a normal weight';
+//   }
+//   if(bmi>24.9){
+//    return'Your BMI is '+ bmi +', so you are overweight';
+//   }
+//   return Math.round(bmi);
 
-// //
+// }
+
+// Generating a dice roll
+// let n=Math.random();
+// n=n*6;
+// n=Math.floor(n)+1;
+// console.log(n);
+
+// Calculating if a year is a leap year Output came as undefined
+function isLeapYear(year){
+  if(year%4){
+    return 'Leap year';
+  }
+  if (year%100){
+    return 'Not leap year';
+  }
+  if(year%400){
+    return 'Leap year';
+  }
+}
+let currentYear=isLeapYear(2000);
+console.log(currentYear);
 
 
