@@ -184,6 +184,13 @@ let currentYear1=isLeapYear(2000);
 console.log(currentYear1);
 
 // Looking into arrays
-
+let guestList=["Ray","Raniel","Saruni","John","Sashi",];
+let invited=prompt("What is your name?");
+if(guestList.includes(invited)){
+  alert("Welcome to the party");
+}
+else(
+  alert("Sorry,try again next time...")
+)
 
 
