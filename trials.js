@@ -72,15 +72,15 @@ alert("Today is " + originalDay);
 // let myAge=lifeinWeeks(56);
 // console.log("These are " + xAge );
   
-// // Correct code 
-// function lifeInWeeks1(age){
-//   let remainingAge=90-age;
-//   let x=remainingAge*365;
-//   let y=remainingAge*52;
-//   let z=remainingAge*12;
-//   console.log("You have " + x+"days left " +y+" weeks" +z+ " months left");
-// }
-// lifeInWeeks1(56);
+// Correct code 
+function lifeInWeeks1(age){
+  let remainingAge=90-age;
+  let x=remainingAge*365;
+  let y=remainingAge*52;
+  let z=remainingAge*12;
+  console.log("You have " + x+"days left " +y+" weeks" +z+ " months left");
+}
+lifeInWeeks1(56);
 
 
 // ///*  Excercism practicals
@@ -126,5 +126,19 @@ function totalTimeInMinutes(layers,minutes){
 }
 const answer3=totalTimeInMinutes(10,40);
 console.log(answer3);
+
+//BMI Calculator using the return function
+function bodyMassIndex(weight,height){
+  var bmiCalculator=weight/(height*height);
+  var bmi= bmiCalculator(65,1.8);
+  return bmi;
+}
+// // Generating a dice roll
+// let n=Math.random();
+// n=n*6;
+// n=Math.floor(n)+1;
+// console.log(n);
+
+// //
 
 
