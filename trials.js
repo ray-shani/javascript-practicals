@@ -35,4 +35,11 @@ let characterWords=words.length;
 alert("You have written " + characterWords + "and are remaining with " + (280-characterWords));
 // Slice and removing parts of a string
 
+// Generating a love calculator
+let firstName=prompt("What is your name?");
+let secondName=prompt("What is your second name?");
+let lovePercentage=Math.random();
+lovePercentage=lovePercentage*100;
+lovePercentage=Math.floor(lovePercentage)+1;
+alert("Their love percentage is " + lovePercentage+" %");
 
