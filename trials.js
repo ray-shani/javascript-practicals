@@ -233,6 +233,16 @@ alert("You have written "+ input.length +"characters, you have" + remainder +"le
 var firstName=prompt("What is your name");
 let firstLetter=firstName.slice(0,1);
 let uppercaseLetter=firstLetter.toUpperCase();
-alert("Your name is " + uppercaseLetter+firstName.slice(1) );
+alert("Your name is " + uppercaseLetter+firstName.slice(1).toLowerCase() );
 
+// Function basics recovery
+
+function lifeinWeeks2(age){
+  let retirementAge=90-age;
+  let remainingDays=retirementAge*365;
+  let remainingWeeks=retirementAge*56;
+  let remainingMonths=retirementAge*12;
+alert("You have "+ remainingDays+" days left, " + remainingWeeks+" weeks left and " + remainingMonths +" months left!");
+}
+lifeinWeeks2(56);
 
