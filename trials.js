@@ -226,5 +226,13 @@ the oven at the moment. */
 let input=prompt("Tell us about yourself");
 let characters=180;
 let remainder=characters-input.length;
+ 
 alert("You have written "+ input.length +"characters, you have" + remainder +"left");
+
+// Slice practices
+var firstName=prompt("What is your name");
+let firstLetter=firstName.slice(0,1);
+let uppercaseLetter=firstLetter.toUpperCase();
+alert("Your name is " + uppercaseLetter+firstName.slice(1) );
+
 
