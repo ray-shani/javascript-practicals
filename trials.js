@@ -246,3 +246,9 @@ alert("You have "+ remainingDays+" days left, " + remainingWeeks+" weeks left an
 }
 lifeinWeeks2(56);
 
+// Love calculator
+prompt("Who is the first person!!");
+prompt("Who is the second person!!");
+let percent=Math.random()*100;
+percent=Math.floor(percent)+1;
+alert("Your love percentage is "+ percent+"%");
