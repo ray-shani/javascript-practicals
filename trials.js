@@ -161,36 +161,70 @@ the oven at the moment. */
 //     return 'Leap year';
 //   }
 // }
-// let currentYear=isLeapYear(2000);
-// console.log(currentYear);
+// // let currentYear=isLeapYear(2000);
+// // console.log(currentYear);
 
-// Correct code on the leap year challenge
-function isLeapYear(year){
-  if(year%4===0){
-    if(year%100===0){
-      if(year%400===0){
-        return 'Leap year';
-      }
-    }
-    else{
-      return 'Not leap year';
-    }
-  }
-  else{
-    return 'Leap year';
-  }
-}
-let currentYear1=isLeapYear(2000);
-console.log(currentYear1);
+// // Correct code on the leap year challenge
+// function isLeapYear(year){
+//   if(year%4===0){
+//     if(year%100===0){
+//       if(year%400===0){
+//         return 'Leap year';
+//       }
+//     }
+//     else{
+//       return 'Not leap year';
+//     }
+//   }
+//   else{
+//     return 'Leap year';
+//   }
+// }
+// let currentYear1=isLeapYear(2000);
+// console.log(currentYear1);
 
-// Looking into arrays
-let guestList=["Ray","Raniel","Saruni","John","Sashi",];
-let invited=prompt("What is your name?");
-if(guestList.includes(invited)){
-  alert("Welcome to the party");
-}
-else(
-  alert("Sorry,try again next time...")
-)
+// // Looking into arrays
+// let guestList=["Ray","Raniel","Saruni","John","Sashi",];
+// let invited=prompt("What is your name?");
+// if(guestList.includes(invited)){
+//   alert("Welcome to the party");
+// }
+// else(
+//   alert("Sorry,try again next time...")
+// )
 
+// //FizzBuzz challenge
+
+// // function runnersUp(rankings){
+// //   let rankings=[1,2,3,4,4,5,5,6,];
+// //   rankings=rankings(Math.max(rankings)--);
+// //   return rankings;
+// // }
+// // console.log(runnersUp);
+
+
+// // Practices as catching up
+// alert("wozza wozza");
+// prompt("This is a re-learning experience");
+// var email="please input your email";
+// email.length;
+// let emailName="john@gmail.com";
+// alert(email + emailName + " This is a dummy email for testing");
+// // Coding excercise
+
+// function test(){
+//   var a="3";
+//   var b="8";
+// var c=a;
+// b=c;
+// a=b;
+//   console.log("a is "+a);
+//   console.log("b is "+b);
+// }
+
+// 
+let input=prompt("Tell us about yourself");
+let characters=180;
+let remainder=characters-input.length;
+alert("You have written "+ input.length +"characters, you have" + remainder +"left");
 
